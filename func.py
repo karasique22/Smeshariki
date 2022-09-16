@@ -116,18 +116,18 @@ def draw_krosh():
 
     ''' Left Krosh`s hand '''
     beginShape()
-    curveVertex(510, 463)
-    curveVertex(510, 463)
-    curveVertex(535, 473)
-    curveVertex(558, 466)
-    curveVertex(564, 445)
-    curveVertex(549, 433)
-    curveVertex(535, 430)
-    curveVertex(535, 430)
+    curveVertex(507, 468)
+    curveVertex(507, 468)
+    curveVertex(538, 478)
+    curveVertex(561, 471)
+    curveVertex(567, 450)
+    curveVertex(552, 438)
+    curveVertex(532, 435)
+    curveVertex(532, 435)
     endShape()
 
     ''' Krosh`s body '''
-    ellipse(422, 385, 235, 225)
+    ellipse(422, 385, 247, 225)
 
     ''' Right Krosh`s ear '''
     beginShape()
@@ -151,18 +151,18 @@ def draw_krosh():
 
     ''' Right Krosh`s hand '''
     beginShape()
-    curveVertex(348, 389)
-    curveVertex(348, 389)
-    curveVertex(332, 386)
-    curveVertex(306, 394)
-    curveVertex(286, 411)
-    curveVertex(274, 444)
-    curveVertex(296, 462)
-    curveVertex(318, 436)
-    curveVertex(327, 422)
-    curveVertex(346, 402)
-    curveVertex(348, 389)
-    curveVertex(348, 389)
+    curveVertex(343, 389)
+    curveVertex(343, 389)
+    curveVertex(327, 386)
+    curveVertex(301, 394)
+    curveVertex(281, 411)
+    curveVertex(269, 444)
+    curveVertex(291, 462)
+    curveVertex(313, 436)
+    curveVertex(322, 422)
+    curveVertex(341, 402)
+    curveVertex(343, 389)
+    curveVertex(343, 389)
     endShape()
 
     ''' Krosh`s face '''
@@ -212,9 +212,55 @@ def draw_krosh():
 
 # TODO: EZHIK
 def draw_ezhik():
+    ''' Ezhik`s spikes '''
+    stroke(68, 18, 86)
+    strokeWeight(5)
+    beginShape()
+    fill(94, 51, 123)
+    vertex(612, 420)
+    vertex(547, 361)
+    vertex(594, 324)
+    vertex(581, 257)
+    vertex(660, 268)
+    vertex(699, 199)
+    vertex(747, 257)
+    vertex(812, 230)
+    vertex(810, 300)
+    vertex(870, 320)
+    vertex(824, 398)
+    endShape()
+    
+
+    # KOCTbIJlu
+    fill(190, 77, 123)
+    strokeWeight(6)
+    noStroke()
+    ellipse(715, 392, 217, 210)
+    
+    fill(94, 51, 123)
+    rect(705, 280, 40, 17)
+
     fill(190, 77, 123)
     stroke(128,15,62)
-    strokeWeight(6)
 
-    ''' Ezhik body '''
-    circle(705, 393, 200);
+    ''' Ezhik`s body '''
+    beginShape()
+    curveVertex(612, 418)
+    curveVertex(612, 418)
+    curveVertex(608, 398)
+    curveVertex(609, 376)
+    curveVertex(612, 357)
+    curveVertex(612, 357)
+    endShape()
+
+    # Right ear
+    bezier(612, 357, 584, 363, 600, 307, 623, 336)
+    
+    bezier(623, 336, 635, 299, 695, 275, 718, 297)
+    bezier(718, 297, 743, 275, 790, 299, 802, 329)
+    
+    # Left ear
+    bezier(802, 329, 837, 317, 835, 360, 816, 355)
+    bezier(816, 355, 850, 470, 720, 520, 678, 493)
+    bezier(612, 418, 615, 443, 648, 479, 674, 484)
+    curve(678, 493, 678, 493, 674, 484, 690, 484)
